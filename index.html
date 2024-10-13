@@ -1,382 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FLOWCYII HOSTING</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background-image: url('https://pomf2.lain.la/f/ozfr0spo.jpg');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            color: white;
-        }
-
-        header {
-            text-align: center;
-            padding: 10px;
-        }
-
-        .banner-title {
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 20px;
-            font-size: 2em;
-            text-align: center;
-            margin: 0;
-            position: relative;
-            z-index: 1;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: transparent;
-            border-radius: 10px;
-        }
-
-        .category-bar {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .category-bar button {
-            padding: 10px 20px;
-            font-size: 0.9em;
-            color: white;
-            background-color: #ff9800;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin: 5px;
-            transition: background-color 0.3s;
-        }
-
-        .category-bar button:hover {
-            background-color: #e68a00;
-        }
-
-        .search-bar {
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        .search-bar input {
-            padding: 10px;
-            font-size: 0.9em;
-            width: 80%;
-            max-width: 400px;
-            border-radius: 5px;
-            border: none;
-        }
-
-        .banner {
-            text-align: center;
-            margin: 20px 0;
-        }
-
-        .banner img {
-            width: 100%;
-            max-width: 800px;
-            height: auto;
-            border-radius: 10px;
-        }
-
-        .product-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 15px;
-        }
-
-        .product {
-            background-color: #333;
-            padding: 10px;
-            border-radius: 10px;
-            text-align: center;
-            border: 1px solid white;
-        }
-
-        .product img {
-            max-width: 100%;
-            height: 100px;
-            object-fit: cover;
-            border-radius: 10px;
-        }
-
-        .product h3 {
-            margin: 5px 0;
-            font-size: 1em;
-        }
-
-        .product p {
-            font-size: 0.9em;
-        }
-
-        .product button {
-            padding: 5px 10px;
-            font-size: 0.9em;
-            color: white;
-            background-color: #ff9800;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            position: relative;
-            transition: transform 0.2s;
-        }
-
-        .product button:hover {
-            background-color: #e68a00;
-        }
-
-        .product button:active {
-            transform: scale(0.95);
-        }
-
-        .no-results {
-            text-align: center;
-            font-size: 1.2em;
-        }
-
-        /* Modal Styles */
-        .modal {
-            display: none; /* Hidden by default */
-            position: fixed; /* Stay in place */
-            z-index: 1000; /* Sit on top */
-            left: 0;
-            top: 0;
-            width: 100%; /* Full width */
-            height: 100%; /* Full height */
-            overflow: auto; /* Enable scroll if needed */
-            background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
-            padding-top: 60px;
-        }
-
-        .modal-content {
-            background-color: #fefefe;
-            margin: 5% auto; /* 15% from the top and centered */
-            padding: 20px;
-            border: 1px solid #888;
-            width: 80%; /* Could be more or less, depending on screen size */
-            max-width: 400px;
-            border-radius: 10px;
-        }
-
-        .close {
-            color: #aaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
-
-        .close:hover,
-        .close:focus {
-            color: black;
-            text-decoration: none;
-            cursor: pointer;
-        }
-
-        .modal input {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-
-        .modal button {
-            width: 100%;
-            padding: 10px;
-            background-color: #ff9800;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .modal button:hover {
-            background-color: #e68a00;
-        }
-
-        .form-label {
-            margin: 10px 0;
-            font-weight: bold;
-        }
-    </style>
+    <title>hosting landing page</title>
+    <link rel="icon" href="https://pomf2.lain.la/f/l1y4pqx.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class="banner-title">𝐅𝐋𝐎𝐖𝐂𝐘𝐈𝐈 𝐇𝐎𝐒𝐓𝐈𝐍𝐆</div>
+        <img src="https://pomf2.lain.la/f/l1y4pqx.jpg" alt="DanzzOfficial Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#products">products</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <div class="container">
-        <p style="text-align: center;">Menyediakan Kebutuhan Hosting Anda</p>
-        
-        <!-- Banner -->
-        <div class="banner">
-            <img src="https://pomf2.lain.la/f/dtfce4rz.jpg" alt="Promotional Banner">
-        </div>
-
-
-        <!-- Kategori Filter -->
-        <div class="category-bar">
-            <button onclick="filterProducts('All')">All</button>
-            <button onclick="filterProducts('Panel')">Panel</button>
-            <button onclick="filterProducts('Nokos')">Nokos</button>
-        </div>
-
-        <!-- Fitur Pencarian -->
-        <div class="search-bar">
-            <input type="text" id="searchInput" placeholder="Search products..." onkeyup="searchProducts()">
-        </div>
-
-        <!-- Daftar Produk -->
-        <div class="product-grid" id="productGrid">
-            <!-- Produk Panel 1GB - 9GB dan Unlimited -->
-            <div class="product" data-name="Panel 1GB" data-description="Flowcyii Hosting memberikan garansi 1X. Jadi jangan ragu untuk membeli." data-category="Panel">
-                <img src="https://i.postimg.cc/3w5JvLKj/20240910-080342.jpg" alt="Panel 1GB">
-                <h3>Panel 1GB</h3>
-                <p>Flowcyii Hosting memberikan garansi 1X. Jadi jangan ragu untuk membeli.</p>
-                <p>Rp1.000</p>
-                <button onclick="buyNow('Panel 1GB')">Beli Sekarang</button>
-            </div>
-            <div class="product" data-name="Panel 2GB" data-description="Flowcyii Hosting memberikan garansi 1X. Jadi jangan ragu untuk membeli." data-category="Panel">
-                <img src="https://i.postimg.cc/3w5JvLKj/20240910-080342.jpg" alt="Panel 2GB">
-                <h3>Panel 2GB</h3>
-                <p>Flowcyii Hosting memberikan garansi 1X. Jadi jangan ragu untuk membeli.</p>
-                <p>Rp2.000</p>
-                <button onclick="buyNow('Panel 2GB')">Beli Sekarang</button>
-            </div>
-            <div class="product" data-name="Panel 3GB" data-description="Flowcyii Hosting memberikan garansi 1X. Jadi jangan ragu untuk membeli." data-category="Panel">
-                <img src="https://i.postimg.cc/3w5JvLKj/20240910-080342.jpg" alt="Panel 3GB">
-                <h3>Panel 3GB</h3>
-                <p>Flowcyii Hosting memberikan garansi 1X. Jadi jangan ragu untuk membeli.</p>
-                <p>Rp3.000</p>
-                <button onclick="buyNow('Panel 3GB')">Beli Sekarang</button>
-            </div>
-            <div class="product" data-name="Panel 4GB" data-description="Flowcyii Hosting memberikan garansi 1X. Jadi jangan ragu untuk membeli." data-category="Panel">
-                <img src="https://i.postimg.cc/3w5JvLKj/20240910-080342.jpg" alt="Panel 4GB">
-                <h3>Panel 4GB</h3>
-                <p>Flowcyii Hosting memberikan garansi 1X. Jadi jangan ragu untuk membeli.</p>
-                <p>Rp4.000</p>
-                <button onclick="buyNow('Panel 4GB')">Beli Sekarang</button>
-            </div>
-            <div class="product" data-name="Panel 5GB" data-description="Flowcyii Hosting memberikan garansi 1X. Jadi jangan ragu untuk membeli." data-category="Panel">
-                <img src="https://i.postimg.cc/3w5JvLKj/20240910-080342.jpg" alt="Panel 5GB">
-                <h3>Panel 5GB</h3>
-                <p>Flowcyii Hosting memberikan garansi 1X. Jadi jangan ragu untuk membeli.</p>
-                <p>Rp5.000</p>
-                <button onclick="buyNow('Panel 5GB')">Beli Sekarang</button>
-            </div>
-            <div class="product" data-name="Panel 6GB" data-description="Flowcyii Hosting memberikan garansi 1X. Jadi jangan ragu untuk membeli." data-category="Panel">
-                <img src="https://i.postimg.cc/3w5JvLKj/20240910-080342.jpg" alt="Panel 6GB">
-                <h3>Panel 6GB</h3>
-                <p>Flowcyii Hosting memberikan garansi 1X. Jadi jangan ragu untuk membeli.</p>
-                <p>Rp6.000</p>
-                <button onclick="buyNow('Panel 6GB')">Beli Sekarang</button>
-            </div>
-            <div class="product" data-name="Panel 7GB" data-description="Flowcyii Hosting memberikan garansi 1X. Jadi jangan ragu untuk membeli." data-category="Panel">
-                <img src="https://i.postimg.cc/3w5JvLKj/20240910-080342.jpg" alt="Panel 7GB">
-                <h3>Panel 7GB</h3>
-                <p>Flowcyii Hosting memberikan garansi 1X. Jadi jangan ragu untuk membeli.</p>
-                <p>Rp7.000</p>
-                <button onclick="buyNow('Panel 7GB')">Beli Sekarang</button>
-            </div>
-            <div class="product" data-name="Panel 8GB" data-description="Flowcyii Hosting memberikan garansi 1X. Jadi jangan ragu untuk membeli." data-category="Panel">
-                <img src="https://i.postimg.cc/3w5JvLKj/20240910-080342.jpg" alt="Panel 8GB">
-                <h3>Panel 8GB</h3>
-                <p>Flowcyii Hosting memberikan garansi 1X. Jadi jangan ragu untuk membeli.</p>
-                <p>Rp8.000</p>
-                <button onclick="buyNow('Panel 8GB')">Beli Sekarang</button>
-            </div>
-            <div class="product" data-name="Panel 9GB" data-description="Flowcyii Hosting memberikan garansi 1X. Jadi jangan ragu untuk membeli." data-category="Panel">
-                <img src="https://i.postimg.cc/3w5JvLKj/20240910-080342.jpg" alt="Panel 9GB">
-                <h3>Panel 9GB</h3>
-                <p>Flowcyii Hosting memberikan garansi 1X. Jadi jangan ragu untuk membeli.</p>
-                <p>Rp9.000</p>
-                <button onclick="buyNow('Panel 9GB')">Beli Sekarang</button>
-            </div>
-            <div class="product" data-name="Unlimited" data-description="Flowcyii Hosting memberikan garansi 1X. Jadi jangan ragu untuk membeli." data-category="Panel">
-                <img src="https://i.postimg.cc/3w5JvLKj/20240910-080342.jpg" alt="Unlimited">
-                <h3>Unlimited</h3>
-                <p>Flowcyii Hosting memberikan garansi 1X. Jadi jangan ragu untuk membeli.</p>
-                <p>Rp10.000</p>
-                <button onclick="buyNow('Unlimited')">Beli Sekarang</button>
-            </div>
-
-            <!-- Produk Reseller Panel -->
-            <div class="product" data-name="Reseller Panel" data-description="Flowcyii Hosting memberikan garansi 1X. Jadi jangan ragu untuk membeli." data-category="Panel">
-                <img src="https://i.postimg.cc/3w5JvLKj/20240910-080342.jpg" alt="Reseller Panel">
-                <h3>Reseller Panel (Permanen)</h3>
-                <p>Flowcyii Hosting memberikan garansi 1X. Jadi jangan ragu untuk membeli.</p>
-                <p>Rp10.000</p>
-                <button onclick="buyNow('Reseller Panel')">Beli Sekarang</button>
-            </div>
-
-            <!-- Produk Admin Panel -->
-            <div class="product" data-name="Admin Panel" data-description="Flowcyii Hosting memberikan garansi 1X. Jadi jangan ragu untuk membeli." data-category="Panel">
-                <img src="https://i.postimg.cc/3w5JvLKj/20240910-080342.jpg" alt="Admin Panel">
-                <h3>Admin Panel (Permanen)</h3>
-                <p>Flowcyii Hosting memberikan garansi 1X. Jadi jangan ragu untuk membeli.</p>
-                <p>Rp15.000</p>
-                <button onclick="buyNow('Admin Panel')">Beli Sekarang</button>
-            </div>
-
-            <!-- Produk NOKOS WA INDO tanpa deskripsi -->
-            <div class="product" data-name="NOKOS WA INDO" data-category="Nokos">
-                <img src="https://pomf2.lain.la/f/vy83cst.jpg" alt="NOKOS WA INDO" style="width: 100px; height: 100px;">
-                <h3>NOKOS WA INDO</h3>
-                <p>Rp5.000</p>
-                <button onclick="buyNow('NOKOS WA INDO')">Beli Sekarang</button>
-            </div>
+    <div class="hero">
+        <div class="container">
+            <h1 class="judul">Flowcyii Hosting</h1><h2 class="subjudul">hosting landing pages</h2>
+            <p>discover top-quality products at unbeatable prices!</p>
+            <a href="#products" class="cta-button">shop now</a>
         </div>
     </div>
 
-    <script>
-        // Fungsi untuk memfilter produk
-        function filterProducts(category) {
-            const products = document.querySelectorAll('.product');
-            products.forEach(product => {
-                if (category === 'All' || product.getAttribute('data-category') === category) {
-                    product.style.display = 'block';
-                } else {
-                    product.style.display = 'none';
-                }
-            });
-        }
+    <main class="container">
+   <section id="products" class="product-section">
+    <h2>MY PRODUK</h2>
+    <div class="product-grid">
+        <div class="product">
+            <h3>Panel 1GB</h3>
+            <p>1 Bulan</p>
+            <p class="price">Rp.1.000</p>
+            <a href="https://wa.me/6288211386009?text=Assalamualaikum%20kak,%20beli%20Panel%201GB" class="cta-button">buy</a>
+        </div>
+        <div class="product">
+            <h3>Panel 2GB</h3>
+            <p>1 Bulan</p>
+            <p class="price">Rp.2.000</p>
+            <a href="https://wa.me/6288211386009?text=Assalamualaikum%20kak,%20beli%20Panel%202GB" class="cta-button">buy</a>
+        </div>
+        <div class="product">
+            <h3>Panel 3GB</h3>
+            <p>1 Bulan</p>
+            <p class="price">Rp.3.000</p>
+            <a href="https://wa.me/6288211386009?text=Assalamualaikum%20kak,%20beli%20Panel%203GB" class="cta-button">buy</a>
+        </div>
+        <div class="product">
+            <h3>Panel 4GB</h3>
+            <p>1 Bulan</p>
+            <p class="price">Rp.4.000</p>
+            <a href="https://wa.me/6288211386009?text=Assalamualaikum%20kak,%20beli%20Panel%204GB" class="cta-button">buy</a>
+        </div>
+        <div class="product">
+            <h3>Panel 5GB</h3>
+            <p>1 Bulan</p>
+            <p class="price">Rp.5.000</p>
+            <a href="https://wa.me/6288211386009?text=Assalamualaikum%20kak,%20beli%20Panel%205GB" class="cta-button">buy</a>
+        </div>
+        <div class="product">
+            <h3>Panel Unlimited</h3>
+            <p>1 Bulan</p>
+            <p class="price">Rp.6.000</p>
+            <a href="https://wa.me/6288211386009?text=Assalamualaikum%20kak,%20beli%20Panel%20Unlimited" class="cta-button">buy</a>
+        </div>
+        <div class="product">
+            <h3>Reseller Panel</h3>
+            <p>Permanen</p>
+            <p class="price">Rp.8.000</p>
+            <a href="https://wa.me/6288211386009?text=Assalamualaikum%20kak,%20beli%20Reseller%20Panel" class="cta-button">buy</a>
+        </div>
+        <div class="product">
+            <h3>Nokos Indo</h3>
+            <p>Save 7H/Lebih</p>
+            <p class="price">Rp.7.000</p>
+            <a href="https://wa.me/6288211386009?text=Assalamualaikum%20kak,%20beli%20Nokos%20Indo" class="cta-button">buy</a>
+        </div>
+    </div>
+</section>
 
-        // Fungsi untuk mencari produk
-        function searchProducts() {
-            const input = document.getElementById('searchInput').value.toLowerCase();
-            const products = document.querySelectorAll('.product');
-            let hasResults = false;
+        <section id="about" class="about-section">
+            <h2>About Us</h2>
+            <p>We offer high-quality hosting products for WhatsApp bots to meet your daily needs. Our commitment is to provide reliable and efficient solutions for all your hosting requirements.</p>
+            <p>For more information about our products, please <a href="https://wa.me/6288211386009">contact us</a>.</p>
+        </section>
 
-            products.forEach(product => {
-                const productName = product.getAttribute('data-name').toLowerCase();
-                if (productName.includes(input)) {
-                    product.style.display = 'block';
-                    hasResults = true;
-                } else {
-                    product.style.display = 'none';
-                }
-            });
-
-            if (!hasResults) {
-                document.getElementById('productGrid').innerHTML = '<p class="no-results">No results found.</p>';
-            }
-        }
-
-        // Fungsi untuk membeli produk
-        function buyNow(productName) {
-            const message = `Bang beli ${productName}`;
-            const whatsappLink = `https://wa.me/6288211386009?text=${encodeURIComponent(message)}`;
-            
-            window.open(whatsappLink, '_blank');
-        }
-    </script>
+<section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <div class="contact-item">
+                <a href="mailto:flowcyii@gmail.com">
+                    <svg class="contact-icon" viewBox="0 0 24 24">
+                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                    </svg>
+                    <span>flowcyii@gmail.com</span>
+                </a>
+            </div>
+            <div class="contact-item">
+                <a href="https://wa.me/6288211386009">
+                    <svg class="contact-icon" viewBox="0 0 24 24">
+                        <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                    </svg>
+                    <span>WhatsApp</span>
+                </a>
+            </div>
+            <div class="contact-item">
+                <a href="https://www.google.com/maps/search/?api=1&query=Indonesia" target="_blank">
+                    <svg class="contact-icon" viewBox="0 0 24 24">
+                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                    </svg>
+                    <span>My Location</span>
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+<!-- music auto play -->
+<audio controls autoplay loop>
+    <source src="https://pomf2.lain.la/f/swl0rnov.mp3" type="audio/mp3">
+    </audio>
+<footer>
+    <p>&copy; 2024 Flowcyii Hosting. All rights reserved.</p>
+   <p><a href="https://www.youtube.com/@flowcyii" target="_blank">©Flowcyii Hosting 2024</a></p>
+</footer>
 </body>
 </html>
